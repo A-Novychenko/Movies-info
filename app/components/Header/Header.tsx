@@ -5,25 +5,22 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.header__wrap}>
-          <a href="./index.html" className={styles.logo}>
-            <svg className={styles.logo__img}>
+          <a href="/" className={styles.logo}>
+            {/* <svg className={styles.logo__img}>
               <use
                 className={styles.logo__icon}
                 // href="./images/sprite.svg#icon-film"
                 href="#"
               ></use>
-            </svg>
+            </svg> */}
             <span className={styles.logo__name}>Filmoteka</span>
           </a>
 
           <nav className={styles.header__nav}>
-            <a
-              href="./index.html"
-              className="header__link header__link_current js-home-btn"
-            >
+            <a href="/" className={styles.header__link}>
               home
             </a>
-            <a href="./library.html" className={styles.header__link}>
+            <a href="/" className={styles.header__link}>
               my library
             </a>
           </nav>

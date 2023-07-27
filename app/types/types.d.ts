@@ -1,34 +1,11 @@
-interface FilmResponse {
-  count: number;
-  next: number | null;
-  previous: number | null;
-  results: Film[];
-}
-interface Film {
-  title: string;
-  episode_id: number;
-  opening_crawl: string;
-  director: string;
-  producer: string;
-  release_date: string;
-  characters: string[];
-  planets: string[];
-  starships: string[];
-  vehicles: string[];
-  species: string[];
-  created: string;
-  edited: string;
-  url: string;
-}
-
-interface MovieResponse {
+interface MoviesResponse {
   page: number;
-  results: Movie[];
+  results: Movies[];
   total_pages: number;
   total_results: number;
 }
 
-interface Movie {
+interface Movies {
   adult: boolean;
   backdrop_path: string;
   id: number;
@@ -44,4 +21,62 @@ interface Movie {
   video: boolean;
   vote_average: number;
   vote_count: number;
+}
+
+interface MovieResponse {
+  adult: boolean;
+  backdrop_path: string;
+  belongs_to_collection: BelongsToCollection;
+  budget: number;
+  genres: Genre[];
+  homepage: string;
+  id: number;
+  imdb_id: string;
+  original_language: string;
+  original_title: string;
+  overview: string;
+  popularity: number;
+  poster_path: string;
+  production_companies: ProductionCompany[];
+  production_countries: ProductionCountry[];
+  release_date: string;
+  revenue: number;
+  runtime: number;
+  spoken_languages: SpokenLanguage[];
+  status: string;
+  tagline: string;
+  title: string;
+  video: boolean;
+  vote_average: number;
+  vote_count: number;
+}
+
+interface BelongsToCollection {
+  id: number;
+  name: string;
+  poster_path: string;
+  backdrop_path: any;
+}
+
+interface Genre {
+  id: number;
+  name: string;
+}
+
+interface ProductionCompany {
+  id: number;
+  logo_path: string;
+  name: string;
+  origin_country: string;
+}
+
+interface ProductionCountry {
+  iso_3166_1: string;
+  name: string;
+}
+
+interface SpokenLanguage {
+  english_name: string;
+  iso_639_1: string;
+  name: string;
 }

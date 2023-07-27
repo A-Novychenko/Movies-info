@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
+      <head>
+        <title>Filmoteka</title>
+      </head>
       <body className={inter.className}>
-        {/* <header>
-          <p>This is header</p>
-        </header> */}
         <Header />
         {children}
       </body>
