@@ -14,7 +14,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <head>
-        <title>Filmoteka</title>
+        <title>Movies-info</title>
       </head>
       <body className={inter.className}>
         <Header />
