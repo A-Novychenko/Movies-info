@@ -13,7 +13,7 @@ export const Header = () => {
                 href="#"
               ></use>
             </svg> */}
-            <span className={styles.logo__name}>Filmoteka</span>
+            <span className={styles.logo__name}>Movies-info</span>
           </a>
 
           <nav className={styles.header__nav}>

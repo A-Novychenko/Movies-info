@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import styles from "./moviePage.module.css";
 import {getMovie} from "../actions/getMovie";
+import {getTrendMovies} from "../actions/getTrendMovies";
 
 interface Params {
   params: {movieId: number};
@@ -36,4 +37,9 @@ export default async function Movie({params: {movieId}}: Params) {
       </div>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  const movies = await getTrendMovies();
+  return movies.results.map((movie) => ({movieId: movie.id.toString()}));
 }
