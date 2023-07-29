@@ -22,14 +22,14 @@ export default async function Movie({params: {movieId}}: Params) {
         className={styles.poster}
         src={imgUrl}
         alt={movie.original_title}
-        width={500}
-        height={280}
+        width={930}
+        height={550}
       />
 
       <div className="card_descr">
         <div className={styles.info}>
-          <p className="card_rating">{movie.vote_average?.toFixed(1)}</p>
-          <p>{movie.release_date}</p>
+          <p className={styles.movieRating}>{movie.vote_average?.toFixed(1)}</p>
+          <p className={styles.releaseDate}>{movie.release_date}</p>
         </div>
         <div className={styles.overviewWrap}>
           <p className={styles.overview}>{movie.overview}</p>

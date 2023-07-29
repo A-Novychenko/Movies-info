@@ -6,9 +6,7 @@
 
     margin-right: auto;
     margin-left: auto;
-
     padding: 0 40px;
-
     width: 1000px;
 }
 
@@ -16,10 +14,32 @@
     padding: 32px 0;
 
     text-align: center;
-    font-size: 32px;
+    font-size: 48px;
 }
 
 .poster {
     margin-right: auto;
     margin-left: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+
+    color: aqua;
+
+}
+
+.movieRating {
+    font-size: 32px;
+}
+
+.releaseDate {
+    font-size: 32px;
+}
+
+.overview {
+    font-size: 24px;
+    line-height: 1.5;
 }
