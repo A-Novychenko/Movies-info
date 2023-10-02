@@ -37,6 +37,7 @@ export const Header = () => {
 
           <button className={styles.header__search} type="submit">
             <svg className={styles.header__search_icon}>
+
               {/* <use href="./images/sprite.svg#icon-search"></use> */}
               <use href="#"></use>
             </svg>
