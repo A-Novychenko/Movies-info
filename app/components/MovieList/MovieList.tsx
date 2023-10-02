@@ -27,6 +27,7 @@ export const MovieList = async () => {
                 />
 
                 <h3 className={styles.title}>{movie.title}</h3>
+
                 <div className="card_descr">
                   <div className={styles.info}>
                     <p className="card_rating">
@@ -34,6 +35,7 @@ export const MovieList = async () => {
                     </p>
                     <p>{movie.release_date}</p>
                   </div>
+
                   <div className={styles.overviewWrap}>
                     <p className={styles.overview}>{movie.overview}</p>
                   </div>
